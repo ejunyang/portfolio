@@ -141,7 +141,7 @@ export const project = [
     projectContent:
       "전통시장 홍보와 특산물을 판매하는 커머스&커뮤니티 웹사이트",
     description:
-      "전통시장 홍보와 특산물을 판매하는 커머스&커뮤니티 웹 사이트 입니다. 시장의 위치를 지도로 확인할 수 있으며, 어떤 시설들을 제공하고 있는지 확인하여 이용할 수 있습니다. 또한 시장 마다 특산물을 구매할 수 있습니다.",
+      "전통시장에서 운영하고 있는 편의시설 및 위치정보를 얻을 수 있으며, 채팅을 통해 실시간 전통시장의 상황을 파악할 수 있습니다.",
     url: [
       "https://k-nostalgia-one.vercel.app",
       "https://github.com/ejunyang/K-nostalgia",
@@ -218,7 +218,7 @@ export const project = [
     projectName: "인디안밥",
     projectContent: "인디밴드 커뮤니티 웹사이트",
     description:
-      "자신의 돈으로 직접 앨범을 제작하고, 홍보 역시 자신의 돈으로 하는 등 독립적으로 활동하는 뮤지션인 인디밴드가 본인의 공연 및 앨범을 홍보하고 사용자들은 본인이 좋아하는 곡, 밴드, 좋았던 공연을 공유하는 커뮤니티 사이트 입니다.",
+      "독립적으로 활동하는 인디밴드가 본인의 공연 및 앨범을 홍보하고 사용자들은 본인이 좋아하는 곡, 밴드, 좋았던 공연을 공유하는 커뮤니티 사이트 입니다.",
     url: [
       "https://indie-n-bob.vercel.app/",
       "https://github.com/ejunyang/indie-n-bob",

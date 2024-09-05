@@ -2,9 +2,11 @@ import { useNavigate, useParams } from "react-router-dom";
 import { project } from "../lib/data";
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 import { Link } from "react-router-dom";
+import { useDeviceSize } from "../hooks/useDeviceSize";
 
 export const Detail = () => {
   const { id } = useParams();
+  const { isMobile } = useDeviceSize();
   const navigate = useNavigate();
   const current = project.find((el) => el.id === id);
   const isLastPage = current && current.id === "4";
@@ -13,7 +15,7 @@ export const Detail = () => {
     <section className="mb-14">
       {/* 프로젝트별 배경 색상 */}
       <div
-        className={`h-[30rem] mb-60 
+        className={`h-[30rem]  ${isMobile ? "mb-36" : "mb-60 "}
         ${id === "1" ? "bg-[#F5E5CE]" : ""} 
         ${id === "2" ? "bg-[#ABF6E1]" : ""}
         ${id === "3" ? "bg-[#C6E4FF]" : ""}
@@ -51,7 +53,7 @@ export const Detail = () => {
         </div>
 
         {current && (
-          <div className="max-w-screen-md mx-auto text-center pt-10">
+          <div className="max-w-screen-md mx-auto text-center pt-14 px-10">
             <p className="text-[#373737] text-sm mb-4">{current.date}</p>
             <h2 className="text-3xl font-bold text-label_normal">
               {current.projectName}
@@ -77,12 +79,12 @@ export const Detail = () => {
           </div>
         )}
       </div>
-      <div className="max-w-screen-md mx-auto relative">
+      <div className="max-w-screen-md mx-auto relative px-10">
         <div>
           {/* 사용기술 */}
           <h2 className="text-xl font-semibold mt-8">🕹️ 사용기술</h2>
 
-          <ul className="flex gap-2 my-4">
+          <ul className="flex flex-wrap gap-2 my-4">
             {current?.skill?.map((el) => (
               <li className="py-2 px-4 rounded-[10px] bg-gray-50">{el}</li>
             ))}
