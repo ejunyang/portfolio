@@ -52,10 +52,16 @@ export const Career = () => {
             {career.map((el, index) => (
               <li
                 key={index}
-                className="bg-deep rounded-[30px] p-8 text-white w-full"
+                className="bg-deep rounded-[15px] p-8 text-white w-full"
               >
                 <p className="text-label_light text-sm">{el.date}</p>
-                <h2 className="font-bold text-2xl my-2">{el.company}</h2>
+                <h2
+                  className={`${
+                    isMobile ? "text-xl" : "text-2xl"
+                  } font-bold my-2`}
+                >
+                  {el.company}
+                </h2>
                 <p>{el.position}</p>
                 <ul className="mt-4">
                   {el.contents.map((content, index) => (

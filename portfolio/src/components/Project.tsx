@@ -13,14 +13,14 @@ export const Project = () => {
           <li
             key={el.id}
             onClick={() => navigate(`/detail/${el.id}`)}
-            className="bg-deep rounded-[30px] text-white w-full cursor-pointer transition-all duration-300 ease-in-out hover:scale-105"
+            className="bg-deep rounded-[15px] text-white w-full cursor-pointer transition-all duration-300 ease-in-out hover:scale-105"
           >
             <img
               src={el.image}
               alt={el.image}
-              className="rounded-tl-[30px] rounded-tr-[30px]"
+              className="rounded-tl-[15px] rounded-tr-[15px]"
             />
-            <div className="p-8">
+            <div className={`${isMobile ? "p-5" : "p-8"}`}>
               <h3 className="font-bold text-xl mb-2">{el.projectName}</h3>
               <p className="">{el.projectContent}</p>
             </div>
