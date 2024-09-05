@@ -1,12 +1,14 @@
 import { useNavigate } from "react-router-dom";
 import { project } from "../lib/data";
+import { useDeviceSize } from "../hooks/useDeviceSize";
 
 export const Project = () => {
   const navigate = useNavigate();
+  const { isMobile } = useDeviceSize();
 
   return (
     <section className="flex-1">
-      <ul className="grid grid-cols-2 gap-8">
+      <ul className={`grid ${isMobile ? "grid-cols-1" : "grid-cols-2"} gap-8`}>
         {project.map((el) => (
           <li
             key={el.id}

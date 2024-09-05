@@ -1,9 +1,11 @@
 import { useRef, useState } from "react";
 import { career } from "../../lib/data";
 import { Project } from "../Project";
+import { useDeviceSize } from "../../hooks/useDeviceSize";
 
 export const Career = () => {
   const [activeTab, setActiveTab] = useState("Career");
+  const { isMobile } = useDeviceSize();
 
   const careerRef = useRef<HTMLDivElement | null>(null);
   const projectRef = useRef<HTMLDivElement | null>(null);
@@ -13,9 +15,17 @@ export const Career = () => {
   };
 
   return (
-    <div className="bg-normal py-28 ">
-      <div className="max-w-screen-xl mx-auto flex gap-11">
-        <div className="flex flex-col gap-6 font-bold text-white text-5xl text-left sticky top-0">
+    <div className="bg-normal py-28 px-10 ">
+      <div
+        className={`max-w-screen-xl mx-auto flex ${
+          isMobile ? "flex-col" : "flex-row"
+        } gap-11`}
+      >
+        <div
+          className={`flex gap-6 font-bold text-white ${
+            isMobile ? "text-4xl flex-row justify-center" : "text-5xl flex-col"
+          } text-left sticky top-0`}
+        >
           <button
             className={`${
               activeTab === "Career" ? "opacity-100" : "opacity-50"

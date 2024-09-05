@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
+import { useDeviceSize } from "../hooks/useDeviceSize";
 
 export const Cover = () => {
+  const { isMobile } = useDeviceSize();
+
   return (
-    <section className="h-screen py-10">
+    <section className="h-screen p-10">
       <div className="max-w-screen-xl mx-auto h-full flex flex-col justify-between">
         <ul className="flex text-label_light gap-4">
           <li className="transition-all duration-300 ease-in-out hover:text-label_normal">
@@ -17,11 +20,11 @@ export const Cover = () => {
           </li>
         </ul>
 
-        <div className="w-96 mx-auto my-10">
+        <div className={`${isMobile ? "w-[13rem]" : "w-96"} mx-auto my-10`}>
           <img
             src="/main.png"
             alt="어쩌면 종착지는 개발자"
-            className="w-full"
+            className={`w-full`}
           />
         </div>
 

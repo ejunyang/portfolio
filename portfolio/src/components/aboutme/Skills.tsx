@@ -1,7 +1,10 @@
+import { useDeviceSize } from "../../hooks/useDeviceSize";
 import { designSkill, frontSkill, otherSkill } from "../../lib/image";
 import { ReviewButton } from "./ReviewButton";
 
 export const Skills = () => {
+  const { isMobile } = useDeviceSize();
+
   return (
     <div className="flex flex-col gap-8">
       <div>
@@ -10,7 +13,9 @@ export const Skills = () => {
           {frontSkill.map((el, index) => (
             <li
               key={index}
-              className="bg-deep rounded-[15px] w-24 h-16 flex justify-center"
+              className={`bg-deep rounded-[15px] ${
+                isMobile ? "w-16" : "w-24 "
+              } h-16 flex justify-center`}
             >
               <img src={el} alt={el} className="w-6 object-contain" />
             </li>
@@ -23,7 +28,9 @@ export const Skills = () => {
           {designSkill.map((el, index) => (
             <li
               key={index}
-              className="bg-deep rounded-[15px] w-24 h-16 flex justify-center"
+              className={`bg-deep rounded-[15px] ${
+                isMobile ? "w-16" : "w-24 "
+              } h-16 flex justify-center`}
             >
               <img src={el} alt={el} className="w-6 object-contain" />
             </li>
@@ -36,7 +43,9 @@ export const Skills = () => {
           {otherSkill.map((el, index) => (
             <li
               key={index}
-              className="bg-deep rounded-[15px] w-24 h-16 flex justify-center"
+              className={`bg-deep rounded-[15px] ${
+                isMobile ? "w-16" : "w-24 "
+              } h-16 flex justify-center`}
             >
               <img src={el} alt={el} className="w-10 object-contain" />
             </li>
