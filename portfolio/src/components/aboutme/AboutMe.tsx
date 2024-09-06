@@ -20,7 +20,7 @@ export const AboutMe = () => {
           } justify-center my-12 gap-28`}
         >
           <div className="flex justify-center items-center gap-8">
-            <img src="/ejun.png" alt="ejunyang" />
+            <img src="/ejunyang.png" alt="ejunyang" />
           </div>
           <Skills />
         </div>
