@@ -342,7 +342,7 @@ export const project = [
       {
         title: "마이 페이지 닉네임 수정",
         contents: [
-          "컴포넌트가 마운트될 때 useRef를 사용하여 기존 닉네임을 불러와 초기값으로 설정할 수 있습니다. useRef는 리렌더링을 발생시키지 않으므로, 상태 업데이트와 관련된 성능 저하를 방지합니다. 입력 필드의 값이 변경되더라도 컴포넌트가 다시 렌더링되지 않아 더욱 효율적인 사용자 경험을 제공합니다.",
+          "useRef를 사용하여 기존 닉네임을 불러와 초기값으로 설정 후 닉네임 수정 기능을 구현했습니다. 입력 필드의 값이 변경되더라도 컴포넌트가 다시 렌더링되지 않아 더욱 효율적인 사용자 경험을 제공합니다.",
         ],
       },
     ],
@@ -370,7 +370,7 @@ export const project = [
       "https://github.com/ejunyang/expend-management-advanced",
     ],
     date: "2024.06.10 - 2024.06.14",
-    skill: ["React", "Styled Components", "ReduxTK"],
+    skill: ["React", "Styled Components", "ContextAPI", "Json Web Token"],
     function:
       "사용자는 월별로 지출 내역을 간편하게 등록, 수정 및 삭제할 수 있는 기능을 제공합니다. 이 시스템은 로컬 스토리지를 활용하여 사용자가 마지막으로 선택한 월을 저장함으로써, 페이지를 새로 고침하거나 종료한 후에도 해당 정보를 유지할 수 있습니다. 또한, 각 월별 총 지출 금액을 시각적으로 표현하여 사용자가 자신의 지출 패턴을 쉽게 파악할 수 있도록 돕습니다.",
     contribution: [

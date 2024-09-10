@@ -66,6 +66,7 @@ export const Detail = () => {
                 <li key={index} className="">
                   <Link
                     to={el}
+                    target="_blank"
                     className="text-xs px-6 py-3 rounded-[10px] bg-[rgba(0,0,0,.1)] transition-all duration-300 ease-in-out hover:bg-gray-50"
                   >{`${index === 0 ? "서비스 바로가기" : "GitHub"}`}</Link>
                 </li>
