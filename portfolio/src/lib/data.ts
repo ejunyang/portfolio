@@ -165,6 +165,13 @@ export const project = [
         ],
       },
       {
+        title: "커스텀 훅 작업",
+        contents: [
+          "사용자 입력에 대한 반응성을 개선하기 위해 커스텀 훅인 useDebounce를 활용하여 입력값의 변경을 디바운싱 처리하였습니다. 이로써 불필요한 렌더링을 줄이고, 성능을 최적화할 수 있었습니다.",
+          "react-responsive 라이브러리를 사용하여 미디어 쿼리를 기반으로 디바이스 크기 감지를 위해 useDeviceSize 커스텀 훅을 구현하였으며, 이를 통해 화면 크기에 맞춰 컴포넌트의 렌더링을 조정할 수 있습니다.",
+        ],
+      },
+      {
         title: "공통 컴포넌트 작업",
         contents: [
           "재사용성을 위해 Loading, DefaultImage, Alert, FilterButton 등 컴포넌트를 작업했습니다.",
