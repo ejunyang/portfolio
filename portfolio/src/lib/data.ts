@@ -209,6 +209,7 @@ export const project = [
       },
     ],
     trouble: [],
+    preview: "",
   },
   {
     id: "2",
@@ -303,6 +304,7 @@ export const project = [
           "import { createClient } from @/utils/supabase/server로 변경하여 서버 클라이언트를 사용하여 데이터 요청을 처리하니 게시글 목록이 정상적으로 업데이트되었습니다. 클라이언트와 서버 클라이언트의 차이를 이해하고 올바른 클라이언트를 사용함으로써, 게시글 생성 후 리스트 페이지가 정상적으로 업데이트되는 문제를 해결했습니다.",
       },
     ],
+    preview: "",
   },
 
   {
@@ -345,6 +347,7 @@ export const project = [
       },
     ],
     trouble: [],
+    preview: "",
   },
   {
     id: "4",
@@ -387,5 +390,90 @@ export const project = [
       },
     ],
     trouble: [],
+    preview: "",
+  },
+  {
+    id: "5",
+    image: "/project/project6.png",
+    projectName: "Into Active",
+    projectContent: "필라테스 기구 전문 인투액티브 웹사이트",
+    description: "필라테스 기구를 판매하는 웹사이트입니다.",
+    url: ["https://www.intopilatesmall.kr/", "#"],
+    date: "2021",
+    skill: ["html", "css", "Javascript", "Swiper", "cafe24"],
+    function:
+      "사용자는 필라테스 기구를 구매하기 위해 견적 문의를 할 수 있고 관리자는 기구를 관리자 사이트를 통해 등록/수정/삭제가 가능합니다.",
+    contribution: [
+      {
+        title: "전반적인 디자인",
+        contents: [
+          "클라이언트의 요청을 기반으로 사용자 중심의 직관적인 디자인을 구현하였습니다.",
+        ],
+      },
+      {
+        title: "화면 개발",
+        contents: [
+          "Cafe24 기반 하드 코딩으로 작업하여, 요구 사항에 맞는 기능을 구현하였습니다.",
+        ],
+      },
+    ],
+    trouble: [],
+    preview: "/project/intoactive.jpg",
+  },
+  {
+    id: "6",
+    image: "/project/project7.png",
+    projectName: "자라마켓",
+    projectContent: "청년협동조합 자라의 농산물 판매 웹사이트",
+    description: "필라테스 기구를 판매하는 웹사이트입니다.",
+    url: ["#", "#"],
+    date: "2022",
+    skill: ["html", "css", "Javascript", "Swiper", "cafe24"],
+    function:
+      "마켓 컬리 느낌의 전자상거래 플랫폼으로, 충청북도 괴산의 신선한 농산물을 판매합니다. 지역 농민과 협력하여 품질 좋은 농산물을 소비자에게 직접 제공하며, 지역 경제 활성화에 기여하고 있습니다.",
+    contribution: [
+      {
+        title: "전반적인 디자인",
+        contents: [
+          "클라이언트의 요청을 기반으로 사용자 친화적인 인터페이스를 통해 손쉽게 다양한 농산물을 탐색하고 구매할 수 있는 환경을 조성하였습니다.",
+        ],
+      },
+      {
+        title: "화면 개발",
+        contents: [
+          "Cafe24 기반 하드 코딩으로 작업하여, 요구 사항에 맞는 기능을 구현하였습니다.",
+        ],
+      },
+    ],
+    trouble: [],
+    preview: "/project/zara.png",
+  },
+  {
+    id: "7",
+    image: "/project/project8.png",
+    projectName: "Victory on",
+    projectContent: "마케팅 회사 빅토리온의 랜딩페이지",
+    description: "마케팅 회사 빅토리온의 랜딩페이지입니다.",
+    url: ["#", "#"],
+    date: "2020",
+    skill: ["html", "css", "Javascript", "Swiper", "cafe24"],
+    function:
+      "해당 랜딩페이지는 마케팅 회사의 협력사와 성공 사례를 포트폴리오 형식으로 소개하여 신뢰성과 전문성을 강조하며,사용자가 회사의 역량을 쉽게 파악할 수 있도록 구현했습니다.",
+    contribution: [
+      {
+        title: "전반적인 디자인",
+        contents: [
+          "클라이언트의 요청을 기반으로 사용자 중심의 직관적인 디자인을 구현하였습니다.",
+        ],
+      },
+      {
+        title: "화면 개발",
+        contents: [
+          "Cafe24 기반 하드 코딩으로 작업하여, 요구 사항에 맞는 기능을 구현하였습니다.",
+        ],
+      },
+    ],
+    trouble: [],
+    preview: "/project/victory.jpg",
   },
 ];

@@ -9,7 +9,7 @@ export const Detail = () => {
   const { isMobile } = useDeviceSize();
   const navigate = useNavigate();
   const current = project.find((el) => el.id === id);
-  const isLastPage = current && current.id === "4";
+  const isLastPage = current && current.id === "7";
 
   return (
     <section className="mb-14">
@@ -20,8 +20,9 @@ export const Detail = () => {
         ${id === "2" ? "bg-[#ABF6E1]" : ""}
         ${id === "3" ? "bg-[#C6E4FF]" : ""}
         ${id === "4" ? "bg-[#D5E0FC]" : ""}
-        ${id === "5" ? "bg-[#CADDFF]" : ""}
-        ${id === "6" ? "bg-[#F7CBC4]" : ""}`}
+        ${id === "5" ? "bg-[#F7CBC4]" : ""}
+        ${id === "6" ? "bg-[#7CDCE6]" : ""}
+        ${id === "7" ? "bg-[#FFEEBD]" : ""}`}
       >
         {/* Prev, Next */}
         <div className="max-w-screen-xl mx-auto translate-y-10 flex justify-between">
@@ -63,7 +64,7 @@ export const Detail = () => {
 
             <ul className="flex gap-4 justify-center items-center mb-8">
               {current.url.map((el, index) => (
-                <li key={index} className="">
+                <li key={index}>
                   <Link
                     to={el}
                     target="_blank"
@@ -116,7 +117,9 @@ export const Detail = () => {
             ☄️ 트러블 슈팅
           </h2>
 
-          <ul className={`${isLastPage ? "hidden" : "block"}`}>
+          <ul
+            className={`${current?.trouble.length === 0 ? "hidden" : "block"}`}
+          >
             {current?.trouble?.map((el) => (
               <li key={el.title} className="mb-8">
                 <h3 className="bg-gray-50 px-8 py-4 rounded-[15px] text-center mb-4">
@@ -139,6 +142,23 @@ export const Detail = () => {
               </li>
             ))}
           </ul>
+
+          {current?.preview && current?.preview?.length > 0 && (
+            <>
+              <h2 className="text-xl font-semibold mt-16 mb-4">
+                🎁 Preview{" "}
+                <span className="text-xs text-label_light font-normal">
+                  유지보수로 인해 결과물이 상이할 수 있다는 점 너른
+                  양해부탁드립니다.
+                </span>
+              </h2>
+
+              <img
+                src={current?.preview}
+                alt={`${current?.projectName} 이미지`}
+              />
+            </>
+          )}
         </div>
       </div>
     </section>
