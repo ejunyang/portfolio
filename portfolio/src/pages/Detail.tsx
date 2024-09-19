@@ -110,7 +110,7 @@ export const Detail = () => {
           {/* 트러블슈팅 */}
           <h2
             className={`text-xl font-semibold mt-16 mb-4 ${
-              isLastPage ? "hidden" : "block"
+              current?.trouble.length === 0 ? "hidden" : "block"
             }`}
           >
             ☄️ 트러블 슈팅
