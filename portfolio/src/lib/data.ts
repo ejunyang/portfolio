@@ -117,6 +117,7 @@ export const career = [
       "Photoshop, Illustrator 를 활용한 웹사이트, 상세페이지, 인스타그램 피드 제작",
       "html, css, javascript 를 사용해 자사 웹사이트 디자인 및 퍼블리싱",
       "기획자와 지속적인 커뮤니케이션으로 프로젝트 구체화",
+      "에이와 브랜드 브랜딩 및 이벤트 기획",
       "자사 법인 5개 웹사이트 제작 및 유지보수",
     ],
   },
@@ -475,5 +476,44 @@ export const project = [
     ],
     trouble: [],
     preview: "/project/victory.jpg",
+  },
+];
+
+export const Designlib = [
+  {
+    title: "발보아키친 공식 웹사이트 디자인",
+    image: "/design/design1.jpg",
+    tools: ["Figma", "Photoshop", "Illustrator"],
+    desc: "고식이섬유 그래놀라, 오트죽, 오트밀을 판매하는 웰니스 브랜드 발보아키친의 공식 판매 웹사이트의 디자인입니다. 발보아키친은 건강과 웰빙을 중시하는 브랜드로, 자연 친화적인 색상과 따뜻한 느낌의 디자인 요소를 사용하여 소비자에게 신뢰감을 줍니다. 로고와 타이포그래피는 심플하면서도 세련된 스타일로 구성되어 브랜드 이미지를 강화합니다.",
+  },
+  {
+    title: "심플플래닛 공식 웹사이트 디자인",
+    image: "/design/design2.jpg",
+    tools: ["Figma", "Photoshop", "Illustrator"],
+    desc: "심플래닛은 혁신적이고 지속 가능한 식품 생산을 지향하는 기업으로, 현대적이고 깨끗한 디자인을 통해 브랜드의 비전을 명확히 전달합니다. 로고는 간결하면서도 상징적인 요소를 포함하여 브랜드의 정체성을 강조합니다.",
+  },
+  {
+    title: "아이리스랩 채용공고",
+    image: "/design/design3.jpg",
+    tools: ["Photoshop", "Illustrator"],
+    desc: "아이리스랩의 채용공고 디자인은 클레이 모피즘 스타일을 적용하여 부드러운 파스텔 색상과 유기적인 카드 형태로 따뜻하고 친근한 느낌을 전달하며, 사용자 경험을 최적화한 레이아웃을 제공합니다.",
+  },
+  {
+    title: "에이와 & 나이키 스페셜 클래스",
+    image: "/design/design4.jpg",
+    tools: ["Photoshop", "Illustrator"],
+    desc: "형광 초록색 배경을 사용하여 에너제틱하고 활기찬 느낌을 주며, 대담한 타이포그래피로 SPECIAL CLASS를 강조하고, 나이키 로고를 활용하여 요가 브랜드와 나이키 스페셜 클래스를 효과적으로 홍보하는 포스터 디자인입니다.",
+  },
+  {
+    title: "아이리스랩 공유라운지 건의사항 POP",
+    image: "/design/design5.jpg",
+    tools: ["Photoshop", "Illustrator"],
+    desc: "주 컬러 다홍색 배경을 사용하여 따뜻하고 친밀한 느낌을 주며, QR코드를 눈에 띄게 배치하고 간단한 안내 문구를 추가하여 사용자가 쉽게 스캔하여 구글폼에 건의사항을 제출하도록 유도하는 디자인입니다. 친근한 일러스트를 통해 시각적으로 매력적이고 접근성 높은 구성으로 완성되었습니다.",
+  },
+  {
+    title: "에이와 아로마명상 TTC 포스터",
+    image: "/design/design6.jpg",
+    tools: ["Photoshop", "Illustrator"],
+    desc: "꽃 그래픽을 배경으로 한 아로마 명상 지도자 과정 홍보 포스터는 대담한 타이포그래피와 QR코드를 활용해 쉽게 신청할 수 있도록 유도하며, 편안하고 친근한 분위기를 전달합니다.",
   },
 ];

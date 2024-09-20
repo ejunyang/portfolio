@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { career } from "../../lib/data";
 import { Project } from "../Project";
 import { useDeviceSize } from "../../hooks/useDeviceSize";
+import { Design } from "../Design";
 
 export const Career = () => {
   const [activeTab, setActiveTab] = useState("Career");
@@ -9,6 +10,7 @@ export const Career = () => {
 
   const careerRef = useRef<HTMLDivElement | null>(null);
   const projectRef = useRef<HTMLDivElement | null>(null);
+  const designRef = useRef<HTMLDivElement | null>(null);
 
   const handleTabClick = (tab: string) => {
     setActiveTab(tab);
@@ -41,6 +43,14 @@ export const Career = () => {
             onClick={() => handleTabClick("Project")}
           >
             Project
+          </button>
+          <button
+            className={`${
+              activeTab === "Design" ? "opacity-100" : "opacity-50"
+            }`}
+            onClick={() => handleTabClick("Design")}
+          >
+            Design
           </button>
         </div>
 
@@ -80,6 +90,13 @@ export const Career = () => {
           className={`${activeTab === "Project" ? "block" : "hidden"}`}
         >
           <Project />
+        </div>
+
+        <div
+          ref={designRef}
+          className={`${activeTab === "Design" ? "block" : "hidden"}`}
+        >
+          <Design />
         </div>
       </div>
     </div>
