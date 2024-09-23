@@ -426,7 +426,7 @@ export const project = [
     image: "/project/project7.png",
     projectName: "자라마켓",
     projectContent: "청년협동조합 자라의 농산물 판매 웹사이트",
-    description: "필라테스 기구를 판매하는 웹사이트입니다.",
+    description: "청년협동조합 자라의 농산물 판매하는 웹사이트입니다.",
     url: ["#", "#"],
     date: "2022",
     skill: ["html", "css", "Javascript", "Swiper", "cafe24"],
