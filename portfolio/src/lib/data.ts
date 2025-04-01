@@ -93,7 +93,7 @@ export const career = [
       "AI 기반 비전 검사 시스템의 프론트엔드 화면 설계 및 개발",
       "전력 데이터 모니터링을 위한 실시간 대시보드 구현 (WebSocket + React Query)",
       "공항 수화물 X-ray 이미지 분석 시스템의 시각화 화면 개발",
-      "Chart.js, react-chartjs-2, Tailwind 기반의 UI 구성 및 데이터 시각화 최적화",
+      "햐",
     ],
   },
   {
@@ -242,7 +242,7 @@ export const project = [
       {
         title: "실시간 판독 이미지 처리 및 표시",
         contents: [
-          "WebSocket을 통한 비동기 이미지 수신 처리 (`useWebSocket` 훅 구현)",
+          "WebSocket을 통한 비동기 이미지 수신 처리",
           "측면 A~D, Camera A1~D2 단위로 분할 렌더링하며, 위치별 자세히 보기 팝업 및 판독 상태 표시 구현",
         ],
       },
