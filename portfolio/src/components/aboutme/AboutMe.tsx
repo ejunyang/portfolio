@@ -5,7 +5,7 @@ export const AboutMe = () => {
   const { isMobile } = useDeviceSize();
 
   return (
-    <section className="bg-normal py-20 px-10 relative">
+    <section className="bg-normal py-20 px-10 relative ">
       <div className="max-w-screen-xl mx-auto">
         <h1
           className={`font-bold text-white ${

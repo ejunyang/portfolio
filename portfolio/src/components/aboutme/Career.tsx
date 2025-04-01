@@ -17,7 +17,7 @@ export const Career = () => {
   };
 
   return (
-    <div className="bg-normal py-28 px-10 ">
+    <section className="bg-normal py-28 px-10 ">
       <div
         className={`max-w-screen-xl mx-auto flex ${
           isMobile ? "flex-col" : "flex-row"
@@ -99,6 +99,6 @@ export const Career = () => {
           <Design />
         </div>
       </div>
-    </div>
+    </section>
   );
 };

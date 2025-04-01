@@ -5,7 +5,7 @@ export const Interview = () => {
   const { isMobile } = useDeviceSize();
 
   return (
-    <section className="bg-normal pb-20 px-10">
+    <section className="bg-normal pb-20 px-10 ">
       <div className="max-w-screen-xl mx-auto">
         <h1
           className={`font-bold text-white ${

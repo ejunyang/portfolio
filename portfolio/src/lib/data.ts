@@ -86,22 +86,20 @@ export const interview = [
 
 export const career = [
   {
-    date: "2020.06 - 2022.03",
-    company: "(주) 글로벌엠아이지",
-    position: "웹개발디자인팀/팀장",
+    date: "2024.12 ~",
+    company: "(주) 에이아이네이션",
+    position: "개발팀/연구원",
     contents: [
-      "Photoshop, Illustrator를 활용한 웹사이트, 상세페이지, 광고 콘텐츠 제작",
-      "HTML, CSS, JavaScript를 사용해 광고주 웹사이트 디자인 및 퍼블리싱",
-      "기획자 및 프론트엔드(외주) 개발자와 지속적인 커뮤니케이션",
-      "광고주 웹사이트 유지보수",
-      "클라이언트와 직접적인 소통으로 프로젝트 구체화",
-      "광고 콘텐츠 제작으로 광고 목표 매출 2000% 달성",
+      "AI 기반 비전 검사 시스템의 프론트엔드 화면 설계 및 개발",
+      "전력 데이터 모니터링을 위한 실시간 대시보드 구현 (WebSocket + React Query)",
+      "공항 수화물 X-ray 이미지 분석 시스템의 시각화 화면 개발",
+      "Chart.js, react-chartjs-2, Tailwind 기반의 UI 구성 및 데이터 시각화 최적화",
     ],
   },
   {
-    date: "2022.06 - 2022.11",
+    date: "2023.11 - 2024.02",
     company: "(주) 에스앤에스랩",
-    position: "디자인팀/팀원",
+    position: "디자인팀/팀원(주임)",
     contents: [
       "Photoshop, Illustrator 를 활용한 웹사이트, 상세페이지, 인스타그램 피드 제작",
       "html, css, javascript 를 사용해 자사 웹사이트 디자인 및 퍼블리싱",
@@ -122,9 +120,9 @@ export const career = [
     ],
   },
   {
-    date: "2023.11 - 2024.02",
+    date: "2022.06 - 2022.11",
     company: "(주) 에스앤에스랩",
-    position: "디자인팀/팀원(주임)",
+    position: "디자인팀/팀원",
     contents: [
       "Photoshop, Illustrator 를 활용한 웹사이트, 상세페이지, 인스타그램 피드 제작",
       "html, css, javascript 를 사용해 자사 웹사이트 디자인 및 퍼블리싱",
@@ -132,11 +130,171 @@ export const career = [
       "자사 법인 5개 웹사이트 제작 및 유지보수",
     ],
   },
+  {
+    date: "2020.06 - 2022.03",
+    company: "(주) 글로벌엠아이지",
+    position: "웹개발디자인팀/팀장",
+    contents: [
+      "Photoshop, Illustrator를 활용한 웹사이트, 상세페이지, 광고 콘텐츠 제작",
+      "HTML, CSS, JavaScript를 사용해 광고주 웹사이트 디자인 및 퍼블리싱",
+      "기획자 및 프론트엔드(외주) 개발자와 지속적인 커뮤니케이션",
+      "광고주 웹사이트 유지보수",
+      "클라이언트와 직접적인 소통으로 프로젝트 구체화",
+      "광고 콘텐츠 제작으로 광고 목표 매출 2000% 달성",
+    ],
+  },
 ];
 
 export const project = [
   {
     id: "1",
+    image: "/project/insis.png",
+    projectName: "인씨스",
+    projectContent: "공항 수화물 X-Ray 화면 개발",
+    description:
+      "공항 수화물 X-Ray 실시간 스트리밍 및 판독 관리 시스템 프론트엔드 개발",
+    url: [
+      "https://youtu.be/1BYzGe_XtjI",
+      "https://github.com/ejunyang/K-nostalgia",
+    ],
+    date: "2025.02.24 - 2025.03.27",
+    skill: [
+      "Nextjs",
+      "Typescript",
+      "TailwindCSS",
+      "TanstackQuery",
+      "Zustand",
+      "Electron",
+    ],
+    function: `
+    라이브 스트리밍으로 지나가는 수화물의 detection 모드를 실시간 확인할 수 있으며,
+    날짜 필터를 통한 판독 이력 조회 및 바운딩 박스의 색상/굵기/임계값을 사용자가 직접 조정할 수 있는
+    판독 설정 기능을 제공합니다.
+  `,
+    contribution: [
+      {
+        title: "판독 이력 테이블 UI/UX",
+        contents: [
+          "필터 기능 (날짜, 타입 등)을 포함한 판독 이력 테이블 구현",
+          "페이지네이션 및 반응형 카드 뷰 구성으로 모바일 대응",
+        ],
+      },
+      {
+        title: "리소스 관리",
+        contents: [
+          "12시간마다 새로고침을 통해 Electron 내 스트리밍 리소스를 초기화하도록 구현",
+          "일부 메모리 누수 방지를 위해 비동기 요청 캐시 및 이미지 해제 로직 작성",
+        ],
+      },
+      {
+        title: "Electron 앱 패키징",
+        contents: [
+          "Next.js + Electron 조합으로 크로스 플랫폼 패키징 작업 수행",
+          "파일 구조 정리 및 main/renderer 프로세스 통신 로직 분리",
+        ],
+      },
+    ],
+    trouble: [
+      {
+        title: "이미지 스트리밍 누적 시 메모리 사용량 증가",
+        problem:
+          "12시간 이상 라이브 스트리밍 시 이미지 누적으로 Electron 앱의 메모리 사용량이 점점 증가",
+        cause:
+          "이미지 URL 요청 및 캐시가 브라우저/렌더러 프로세스에 지속적으로 누적됨",
+        solve:
+          "12시간 간격으로 스트리밍 리소스를 초기화하고, setInterval로 강제 reload 처리",
+      },
+      {
+        title: "Next.js 라우터 동작 불일치",
+        problem:
+          "`output: 'export'`로 설정 시 Electron 앱 내 라우트 경로가 인식되지 않음",
+        cause:
+          "Next.js에서 정적 export 방식은 `app/route.ts` 기반 라우팅 미지원",
+        solve:
+          "라우트 핸들링 방식을 변경하거나 `next export` 대신 server mode 사용 고려",
+      },
+    ],
+    preview: "",
+  },
+  {
+    id: "2",
+    image: "/project/hansol.png",
+    projectName: "한솔제지",
+    projectContent: "AI 기반 비전 검사 시스템 개발",
+    description:
+      "실시간 WebSocket으로 수신되는 비전 검사 이미지를 처리하고, 이력 및 상태 정보를 시각화하는 프론트엔드 화면 개발",
+    url: [
+      "https://k-nostalgia-one.vercel.app",
+      "https://github.com/ejunyang/K-nostalgia",
+    ],
+    date: "2025.01.10 - 2024.03.01",
+    skill: [
+      "Nextjs",
+      "Typescript",
+      "TailwindCSS",
+      "TanstackQuery",
+      "Zustand",
+      "Electron",
+    ],
+    function:
+      "실시간 WebSocket을 통해 전달되는 판독 이미지 데이터를 처리하고, 측면별 검사 결과를 구성하여 판독 이미지와 원본 이미지를 시각적으로 비교할 수 있습니다. 판독 이력 테이블에서는 날짜 필터 및 상태 정보 기반으로 데이터를 조회하며, 검사 수량, 불량 수량, 불량률 등의 종합 지표도 함께 확인할 수 있습니다.",
+    contribution: [
+      {
+        title: "실시간 판독 이미지 처리 및 표시",
+        contents: [
+          "WebSocket을 통한 비동기 이미지 수신 처리 (`useWebSocket` 훅 구현)",
+          "측면 A~D, Camera A1~D2 단위로 분할 렌더링하며, 위치별 자세히 보기 팝업 및 판독 상태 표시 구현",
+        ],
+      },
+      {
+        title: "판독 이력 테이블 및 페이지네이션",
+        contents: [
+          "데이터 테이블 및 날짜 범위 필터 구현",
+          "불량률, 검사 수량, 불량 수량을 상단 요약 카드로 시각화",
+          "테이블 페이지 전환 처리",
+        ],
+      },
+      {
+        title: "전역 상태 관리",
+        contents: [
+          "Zustand를 활용한 판독 탭 상태 및 필터 상태 분리",
+          "다중 스토어 구조로 UI 상태와 필터 상태 분리, 리렌더링 최소화",
+        ],
+      },
+    ],
+    trouble: [
+      {
+        title: "동적 이미지 수신 처리의 불안정성",
+        problem:
+          "WebSocket을 통해 전달되는 카메라별 이미지 수가 일정하지 않아, 컴포넌트 렌더링 시 index mismatch 또는 undefined 에러가 발생",
+        cause: `
+          서버에서 각 카메라(cameraId)에 대해 수신되는 이미지 수가 동적으로 바뀌기 때문에,
+          초기 렌더링 시 이미지가 없는 상태거나, 일부 카메라만 데이터가 있는 경우 문제가 됨.
+        `,
+        solve: `
+          cameraIds를 기반으로 각 카메라의 이미지 배열을 조회하고,
+          수신된 이미지 개수가 없을 경우 기본 4개를 렌더링하도록 처리.
+          이때 빈 데이터를 위한 fallback 값을 지정
+          또한, 카메라별 이미지 result 상태를 검사해 전체 합격 여부(StatusButton)까지 시각적으로 표시.
+        `,
+      },
+      {
+        title: "탭 전환 시 WebSocket 데이터 소실",
+        problem:
+          "판독 이미지 탭과 원본 이미지 탭 간 이동 시, WebSocket으로 수신한 이미지 데이터가 초기화되어 화면에 표시되지 않는 문제 발생",
+        cause:
+          "소켓 데이터가 각 컴포넌트의 로컬 상태로 관리되고 있어, 컴포넌트 언마운트 시 데이터가 제거됨",
+        solve: `
+          zustand를 이용해 소켓 연결 상태와 수신 데이터를 전역으로 관리.
+          최상위 레벨에서 WebSocket 수신 로직을 처리한 뒤, 하위 컴포넌트는 store에 있는 데이터를 구독하여 상태를 유지할 수 있도록 구조 개선.
+          → 탭 전환 시에도 동일한 데이터 유지
+        `,
+      },
+    ],
+    preview: "",
+  },
+  {
+    id: "3",
     image: "/project/project1.png",
     projectName: "향그리움",
     projectContent:
@@ -213,7 +371,7 @@ export const project = [
     preview: "",
   },
   {
-    id: "2",
+    id: "4",
     image: "/project/project2.png",
     projectName: "인디안밥",
     projectContent: "인디밴드 커뮤니티 웹사이트",
@@ -307,9 +465,8 @@ export const project = [
     ],
     preview: "",
   },
-
   {
-    id: "3",
+    id: "5",
     image: "/project/project4.png",
     projectName: "Cream",
     projectContent: "아이스크림 덕후 커뮤니티 웹사이트",
@@ -351,7 +508,7 @@ export const project = [
     preview: "",
   },
   {
-    id: "4",
+    id: "6",
     image: "/project/project5.png",
     projectName: "가계부",
     projectContent: "월별 개인 지출 내역 관리 웹사이트",
@@ -392,90 +549,6 @@ export const project = [
     ],
     trouble: [],
     preview: "",
-  },
-  {
-    id: "5",
-    image: "/project/project6.png",
-    projectName: "Into Active",
-    projectContent: "필라테스 기구 전문 인투액티브 웹사이트",
-    description: "필라테스 기구를 판매하는 웹사이트입니다.",
-    url: ["https://www.intopilatesmall.kr/", "#"],
-    date: "2021",
-    skill: ["html", "css", "Javascript", "Swiper", "cafe24"],
-    function:
-      "사용자는 필라테스 기구를 구매하기 위해 견적 문의를 할 수 있고 관리자는 기구를 관리자 사이트를 통해 등록/수정/삭제가 가능합니다.",
-    contribution: [
-      {
-        title: "전반적인 디자인",
-        contents: [
-          "클라이언트의 요청을 기반으로 사용자 중심의 직관적인 디자인을 구현하였습니다.",
-        ],
-      },
-      {
-        title: "화면 개발",
-        contents: [
-          "Cafe24 기반 하드 코딩으로 작업하여, 요구 사항에 맞는 기능을 구현하였습니다.",
-        ],
-      },
-    ],
-    trouble: [],
-    preview: "/project/intoactive.jpg",
-  },
-  {
-    id: "6",
-    image: "/project/project7.png",
-    projectName: "자라마켓",
-    projectContent: "청년협동조합 자라의 농산물 판매 웹사이트",
-    description: "청년협동조합 자라의 농산물 판매하는 웹사이트입니다.",
-    url: ["#", "#"],
-    date: "2022",
-    skill: ["html", "css", "Javascript", "Swiper", "cafe24"],
-    function:
-      "마켓 컬리 느낌의 전자상거래 플랫폼으로, 충청북도 괴산의 신선한 농산물을 판매합니다. 지역 농민과 협력하여 품질 좋은 농산물을 소비자에게 직접 제공하며, 지역 경제 활성화에 기여하고 있습니다.",
-    contribution: [
-      {
-        title: "전반적인 디자인",
-        contents: [
-          "클라이언트의 요청을 기반으로 사용자 친화적인 인터페이스를 통해 손쉽게 다양한 농산물을 탐색하고 구매할 수 있는 환경을 조성하였습니다.",
-        ],
-      },
-      {
-        title: "화면 개발",
-        contents: [
-          "Cafe24 기반 하드 코딩으로 작업하여, 요구 사항에 맞는 기능을 구현하였습니다.",
-        ],
-      },
-    ],
-    trouble: [],
-    preview: "/project/zara.png",
-  },
-  {
-    id: "7",
-    image: "/project/project8.png",
-    projectName: "Victory on",
-    projectContent: "마케팅 회사 빅토리온의 랜딩페이지",
-    description: "마케팅 회사 빅토리온의 랜딩페이지입니다.",
-    url: ["#", "#"],
-    date: "2020",
-    skill: ["html", "css", "Javascript", "Swiper", "cafe24"],
-    function:
-      "해당 랜딩페이지는 마케팅 회사의 협력사와 성공 사례를 포트폴리오 형식으로 소개하여 신뢰성과 전문성을 강조하며,사용자가 회사의 역량을 쉽게 파악할 수 있도록 구현했습니다.",
-    contribution: [
-      {
-        title: "전반적인 디자인",
-        contents: [
-          "클라이언트의 요청을 기반으로 사용자 중심의 직관적인 디자인을 구현하였습니다.",
-        ],
-      },
-      {
-        title: "화면 개발",
-        contents: [
-          "Cafe24 기반 하드 코딩으로 작업하여, 요구 사항에 맞는 기능을 구현하였습니다.",
-        ],
-      },
-    ],
-    trouble: [],
-    preview: "/project/victory.jpg",
   },
 ];
 

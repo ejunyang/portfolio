@@ -7,6 +7,9 @@ export const frontSkill = [
   "/skills/frontend/fe6.png",
   "/skills/frontend/fe7.png",
   "/skills/frontend/fe8.png",
+  "/skills/frontend/fe9.png",
+  "/skills/frontend/fe10.png",
+  "/skills/frontend/fe11.png",
 ];
 
 export const designSkill = [

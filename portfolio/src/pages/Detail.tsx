@@ -16,13 +16,15 @@ export const Detail = () => {
       {/* 프로젝트별 배경 색상 */}
       <div
         className={`h-[30rem]  ${isMobile ? "mb-36" : "mb-60 "}
-        ${id === "1" ? "bg-[#F5E5CE]" : ""} 
-        ${id === "2" ? "bg-[#ABF6E1]" : ""}
+        ${id === "1" ? "bg-[#bae9ff]" : ""} 
+        ${id === "2" ? "bg-[#c7c7c7]" : ""}
         ${id === "3" ? "bg-[#C6E4FF]" : ""}
         ${id === "4" ? "bg-[#D5E0FC]" : ""}
         ${id === "5" ? "bg-[#F7CBC4]" : ""}
         ${id === "6" ? "bg-[#7CDCE6]" : ""}
-        ${id === "7" ? "bg-[#FFEEBD]" : ""}`}
+        ${id === "7" ? "bg-[#FFEEBD]" : ""}
+        ${id === "8" ? "bg-[#FFEEBD]" : ""}
+        ${id === "9" ? "bg-[#FFEEBD]" : ""}`}
       >
         {/* Prev, Next */}
         <div className="max-w-screen-xl mx-auto translate-y-10 flex justify-between">
@@ -76,7 +78,7 @@ export const Detail = () => {
             <img
               src={`${current.image}`}
               alt={`${current.projectName}`}
-              className="border border-[#D0D0D0] rounded-[30px] mx-auto"
+              className="border border-[#D0D0D0] rounded-[30px] mx-auto w-[514px] h-[309px]"
             />
           </div>
         )}

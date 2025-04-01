@@ -5,7 +5,7 @@ export const Cover = () => {
   const { isMobile } = useDeviceSize();
 
   return (
-    <section className="h-screen p-10">
+    <section className="h-screen p-10 snap-start">
       <div className="max-w-screen-xl mx-auto h-full flex flex-col justify-between">
         <ul className="flex text-label_light gap-4">
           <li className="transition-all duration-300 ease-in-out hover:text-label_normal">
