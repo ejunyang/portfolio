@@ -91,7 +91,7 @@ export const career = [
     position: "개발팀/연구원",
     contents: [
       "AI 기반 비전 검사 시스템의 프론트엔드 화면 설계 및 개발",
-      "전력 데이터 모니터링을 위한 실시간 대시보드 구현 (WebSocket + React Query)",
+      "전력 데이터 모니터링을 위한 실시간 대시보드 구현",
       "공항 수화물 X-ray 이미지 분석 시스템의 시각화 화면 개발",
       "Chart.js, react-chartjs-2, Tailwind 기반의 UI 구성 및 데이터 시각화 최적화",
     ],
