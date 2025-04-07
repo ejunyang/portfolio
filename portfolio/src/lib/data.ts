@@ -295,6 +295,60 @@ export const project = [
   },
   {
     id: "3",
+    image: "/project/smic.png",
+    projectName: "SMIC 전력대시보드",
+    projectContent: "디바이스 전력 대시보드 화면 개발",
+    description:
+      "스마트제조혁신센터 내 다양한 디바이스의 전력 데이터를 수집 및 시각화하고, 실시간 모니터링을 위한 대시보드 UI를 구현",
+    url: [
+      "https://youtu.be/1BYzGe_XtjI",
+      "https://github.com/ejunyang/K-nostalgia",
+    ],
+    date: "2024.12.16 - 2025.01.10",
+    skill: [
+      "Nextjs",
+      "Typescript",
+      "TailwindCSS",
+      "Zustand",
+      "Electron",
+      "Chartjs",
+      "WebSocket",
+    ],
+    function: `
+    스마트제조혁신센터 내 1층, 2층(데이터센터), 3층 모든 디바이스의 전력을 실시간으로 확인하고,
+    이상탐지 데이터를 시각적으로 식별할 수 있는 대시보드를 구현했습니다.
+    이상이 감지되면 해당 디바이스의 그래프가 반짝이며 알림을 제공합니다.
+  `,
+    contribution: [
+      {
+        title: "실시간 전력 대시보드 그래프 구현",
+        contents: [
+          "Chart.js를 사용해 디바이스별 실시간 전력 사용량 데이터를 시각화",
+          "디바이스별 소켓 데이터를 수신하여 그래프에 실시간 반영되도록 커스텀 훅 작성",
+          "regDate 기반 시간 누적 및 전력량 평균값 계산 로직 구현",
+        ],
+      },
+      {
+        title: "WebSocket 기반 데이터 처리 로직 구현",
+        contents: [
+          "디바이스별 WebSocket URL 관리 및 재연결 로직 구현",
+          "JSON 이중 파싱 후, 디바이스 데이터 타입에 따라 처리 분기",
+          "문자열 숫자 변환 및 타입 가드 함수 적용으로 타입 안정성 확보",
+        ],
+      },
+      {
+        title: "Electron 앱 패키징",
+        contents: [
+          "Next.js + Electron 조합으로 크로스 플랫폼 데스크탑 앱 제작",
+          "Renderer/Main 프로세스 분리 및 스트리밍 리소스 관리 최적화",
+        ],
+      },
+    ],
+    trouble: [],
+    preview: "",
+  },
+  {
+    id: "4",
     image: "/project/project1.png",
     projectName: "향그리움",
     projectContent:
@@ -371,7 +425,7 @@ export const project = [
     preview: "",
   },
   {
-    id: "4",
+    id: "5",
     image: "/project/project2.png",
     projectName: "인디안밥",
     projectContent: "인디밴드 커뮤니티 웹사이트",
@@ -466,7 +520,7 @@ export const project = [
     preview: "",
   },
   {
-    id: "5",
+    id: "6",
     image: "/project/project4.png",
     projectName: "Cream",
     projectContent: "아이스크림 덕후 커뮤니티 웹사이트",
@@ -508,7 +562,7 @@ export const project = [
     preview: "",
   },
   {
-    id: "6",
+    id: "7",
     image: "/project/project5.png",
     projectName: "가계부",
     projectContent: "월별 개인 지출 내역 관리 웹사이트",
