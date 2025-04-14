@@ -18,14 +18,12 @@ export const Detail = () => {
         className={`h-[30rem]  ${isMobile ? "mb-36" : "mb-60 "}
         ${id === "1" ? "bg-[#bae9ff]" : ""} 
         ${id === "2" ? "bg-[#c7c7c7]" : ""}
-        ${id === "3" ? "bg-[#c7c7c7]" : ""}
-        ${id === "4" ? "bg-[#C6E4FF]" : ""}
-        ${id === "5" ? "bg-[#D5E0FC]" : ""}
-        ${id === "6" ? "bg-[#F7CBC4]" : ""}
-        ${id === "7" ? "bg-[#7CDCE6]" : ""}
-        ${id === "8" ? "bg-[#FFEEBD]" : ""}
-        ${id === "9" ? "bg-[#FFEEBD]" : ""}
-        ${id === "10" ? "bg-[#FFEEBD]" : ""}`}
+        ${id === "3" ? "bg-[#303030]" : ""}
+        ${id === "4" ? "bg-[#FFEEBD]" : ""}
+        ${id === "5" ? "bg-[#7CDCE6]" : ""}
+        ${id === "6" ? "bg-[#D5E0FC]" : ""}
+        ${id === "7" ? "bg-[#C6E4FF]" : ""}
+     }`}
       >
         {/* Prev, Next */}
         <div className="max-w-screen-xl mx-auto translate-y-10 flex justify-between">
