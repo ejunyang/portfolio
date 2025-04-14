@@ -18,7 +18,7 @@ export const Project = () => {
             <img
               src={el.image}
               alt={el.image}
-              className="rounded-tl-[15px] rounded-tr-[15px]"
+              className="rounded-tl-[15px] rounded-tr-[15px] w-full"
             />
             <div className={`${isMobile ? "p-5" : "p-8"}`}>
               <h3 className="font-bold text-xl mb-2">{el.projectName}</h3>
