@@ -155,7 +155,7 @@ export const project = [
       "공항 수화물 X-Ray 실시간 스트리밍 및 판독 관리 시스템 프론트엔드 개발",
     url: [
       "https://youtu.be/1BYzGe_XtjI",
-      "https://github.com/ejunyang/K-nostalgia",
+      "https://github.com/ejunyang/insis-project",
     ],
     date: "2025.02.24 - 2025.03.27",
     skill: [
@@ -223,10 +223,7 @@ export const project = [
     projectContent: "AI 기반 비전 검사 시스템 개발",
     description:
       "실시간 WebSocket으로 수신되는 비전 검사 이미지를 처리하고, 이력 및 상태 정보를 시각화하는 프론트엔드 화면 개발",
-    url: [
-      "https://k-nostalgia-one.vercel.app",
-      "https://github.com/ejunyang/K-nostalgia",
-    ],
+    url: ["https://github.com/ejunyang/hansol-project"],
     date: "2025.01.10 - 2024.03.01",
     skill: [
       "Nextjs",
@@ -300,10 +297,7 @@ export const project = [
     projectContent: "디바이스 전력 대시보드 화면 개발",
     description:
       "스마트제조혁신센터 내 다양한 디바이스의 전력 데이터를 수집 및 시각화하고, 실시간 모니터링을 위한 대시보드 UI를 구현",
-    url: [
-      "https://youtu.be/1BYzGe_XtjI",
-      "https://github.com/ejunyang/K-nostalgia",
-    ],
+    url: ["https://github.com/ejunyang/smic-project"],
     date: "2024.12.16 - 2025.01.10",
     skill: [
       "Nextjs",
